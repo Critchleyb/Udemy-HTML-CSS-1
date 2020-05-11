@@ -1,6 +1,7 @@
 /*
 Orange Color: #e67e22
 Dark Orange Color: #cf6d17
+Gray Background color: #f4f4f4
 */
 
 /* ---------------------------------------------------------- */
@@ -113,7 +114,8 @@ h2:after {
     transform: translate(-50%,0);
 }
 
-.section-cities ion-icon {
+.section-cities ion-icon,
+.section-plans ion-icon {
     display: inline-block;
     width: 30px;
     font-size: 120%;
@@ -122,6 +124,8 @@ h2:after {
     margin-right: 5px;
     transform: translate(0,20%);
 }
+
+
 
 /* ------- LINKS ------- */
 
@@ -387,4 +391,63 @@ header {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/* ---------------------------------------------------------- */
+/* PRICING */
+/* ---------------------------------------------------------- */
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.section-plans h3 {
+    text-align: left;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #e3e3e3;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+}
+
+.plan-box div:first-child {
+    background-color: rgb(251, 251, 251);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding:5px 0;
 }
