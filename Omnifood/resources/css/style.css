@@ -105,12 +105,40 @@ h2:after {
 
 /* ------- ICONS ------- */
 
-ion-icon {
+.section-features ion-icon {
     font-size: 200%;
     color:#e67e22;
     margin-bottom: 10px;
     margin-left: 50%;
     transform: translate(-50%,0);
+}
+
+.section-cities ion-icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 120%;
+    text-align: center;
+    color:#e67e22;
+    margin-right: 5px;
+    transform: translate(0,20%);
+}
+
+/* ------- LINKS ------- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
 }
 
 /* ------- BUTTONS ------- */
@@ -292,8 +320,29 @@ header {
     margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/* ---------------------------------------------------------- */
+/* CITIES */
+/* ---------------------------------------------------------- */
+
+.section-cities .box img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 3%;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
