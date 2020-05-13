@@ -30,7 +30,10 @@
     .app-screen { width: 50%; }
     .btn-app img { height: 49px;}
 
-    .city-feature {font-size: 80%;}
+    .city-feature {font-size: 100%;}
+    .section-cities h3 {
+        font-size: 180%;
+    }
     .section-cities ion-icon { margin-right: 1px; }
 
     .plan-box {
@@ -164,6 +167,10 @@
         margin-right: 30%;
     }
 
+    .section-cities h3 {
+        font-size: 150%;
+    }
+
     .section-testimonials cite {
         margin-top: 10px;
     }
@@ -205,9 +212,11 @@
 
     .contact-form input[type=submit]{
         text-align: center;
-        width: 30%;
-        margin-left: 35%;
-        margin-right: 35%;
+        display: block;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 10px;
 
     }
 
@@ -220,10 +229,10 @@
     }
 
     .footer-nav li {
-        width: 19.5%;
+        width: 19%;
         margin:0;
         text-align: center;
-    }
+    }   
 
     .social-links {
         width: 90%;
@@ -232,7 +241,7 @@
     }
 
     .social-links li {
-        width: 24.5%;
+        width: 24%;
         margin:0;
         text-align: center;
         padding-top: 10px;
@@ -245,7 +254,41 @@
 
 /* Small Phones from 0 to 480px */
 @media only screen and (max-width: 480px) {
+    
+    
+    h3{
+        font-size: 140%;
+        margin-bottom: 10px;
+    }
 
+    .city-feature {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .section-plans ul {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+
+    .footer-nav li:last-of-type {
+        transform: translate(0,8px);
+    }
+
+    footer {
+        padding-top: 2%;
+    }
+
+    .city-feature {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
 
 
